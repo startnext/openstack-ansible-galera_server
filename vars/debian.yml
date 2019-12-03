@@ -53,7 +53,7 @@ _galera_mariadb_server_package: "mariadb-server-{{ galera_major_version }}"
 galera_server_mariadb_distro_packages:
   - libmariadb-dev
   - mariadb-client
-  - mariadb-backup
+  - "mariadb-backup-{{ galera_major_version }}"
   - "{{ galera_mariadb_server_package }}"
   - galera-3
   - rsync
